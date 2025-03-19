@@ -1,160 +1,1080 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Class of Section 5</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Section 5</title>
+    <link rel="shortcut icon" href="https://i.imgur.com/3lJJ831.png" type="image/x-icon" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-    <link rel="stylesheet" href="s5.css">
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.0.min.js"></script>
     <script type="text/javascript" src="js/jquery.waterwheelCarousel.min.js"></script>
-  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="s5.css">
+
 </head>
+
 <body>
-    <!-- <header class="header">
-        <nav class="navbar">
-            <div class="nav-main">
-                <img class="logo" src="https://i.postimg.cc/fyGMMR4V/output-onlinepngtools.png" alt="niat-logo">
-            </div>
 
-            <div class="nav-secndry">
-                <i class="nav-list bi bi-list"></i>
-            </div>
-        </nav>
-    </header> -->
-
-    <nav class="navbar navbar-expand-lg navbar-custom">
-        <div class="container-fluid">
-            <a class="navbar-brand text-white" href="#">My Navbar</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon">
-                    <i class="bi bi-list"></i>
-                </span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarContent">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button">
-                            Services
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Web Development</a></li>
-                            <li><a class="dropdown-item" href="#">Design</a></li>
-                            <li><a class="dropdown-item" href="#">Marketing</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
-                    </li>
-                </ul>
+    <div class="mask-container" id="home">
+        <div class="image-back"></div>
+        <svg width="100%" height="100%">
+            <defs>
+                <mask id="mask">
+                    <rect width="100%" height="100%" fill="white" />
+                    <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle" fill="black">S5</text>
+                </mask>
+            </defs>
+        </svg>
+        <div class="marquee">
+            <div class="marquee-content">
+                <div class="mar-txt">The Class of Section 5</div>
             </div>
         </div>
-    </nav>
+    </div>
 
-    <!-- <main>
-        <section class="main-cont">
-            <h1 class="nav-h">The Class of<br/> Section 5</h1>
-        </section>
+    <header class="header">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#home">
+                        <div class="nav-main">
+                            <img class="logo" src="https://i.postimg.cc/fyGMMR4V/output-onlinepngtools.png" alt="niat-logo">
+                            <h1 class="nav-h">Section 5</h1>
+                        </div>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="nav-list bi bi-list"></i>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link custom-nav-link" href="#memories">Gallery</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link custom-nav-link" href="#projects">Projects</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link custom-nav-link" href="#instructors">Instructors</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link custom-nav-link" href="#contact">Contact Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link custom-nav-link" href="#about">About Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="spacer"></section>
 
         <section class="sec-2">
-            <video class="vid-main" controls autoplay muted loop src=""></video>
-        </section>
-
-        <section class="sec-slide">
-            <h1 class="slide-h">Our Projects</h1>
-            <div class="slider-cont">
-                <ul class="carousel">
-                    <li class="items main-pos" id="1">
-                        <video autoplay muted loop src="https://videos.pexels.com/video-files/29652413/12757236_1920_1080_30fps.mp4"></video>
-                    </li>
-                    <li class="items right-pos" id="2">
-                        <video autoplay muted loop src="https://videos.pexels.com/video-files/29652095/12757171_1920_1080_30fps.mp4"></video>
-                    </li>
-                    <li class="items back-pos" id="3">
-                        <video autoplay muted loop src="https://videos.pexels.com/video-files/29652156/12757211_1920_1080_30fps.mp4"></video>
-                    </li>
-                    <li class="items back-pos" id="4">
-                        <video autoplay muted loop src="https://videos.pexels.com/video-files/29652160/12757221_1920_1080_30fps.mp4"></video>
-                    </li>
-                    <li class="items back-pos" id="5">
-                        <video autoplay muted loop src="https://videos.pexels.com/video-files/29653086/12757422_1920_1080_30fps.mp4"></video>
-                    </li>
-                    <li class="items back-pos" id="6">
-                        <video autoplay muted loop src="https://videos.pexels.com/video-files/29653315/12757499_1920_1080_30fps.mp4"></video>
-                    </li>
-                    <li class="items left-pos" id="7">
-                        <video autoplay muted loop src=""></video>
-                    </li>
-                    <li class="items back-pos" id="8">
-                        <video autoplay muted loop src=""></video>
-                    </li>
-                    <li class="items left-pos" id="9">
-                        <video autoplay muted loop src=""></video>
-                </ul>
-                <span>
-                    <input type="button" value="Prev" id="prev">
-                    <input type="button" value="Next" id="next">
-                </span>
+            <h1 class="slide-h" style="margin-top: 20px;">Our Journey So Far</h1>
+            <div class="vid-cont">
+                <video class="vid-main" controls loop src="https://i.imgur.com/Q3Ml4Bj.mp4"></video>
             </div>
         </section>
 
-        <section class="sec-alt">
-            <h1 class="slide-h">Our Projects</h1>
-            <div class="carousel-container">
-                <div id="videoCarousel" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <video autoplay muted loop src="https://videos.pexels.com/video-files/29652413/12757236_1920_1080_30fps.mp4"></video>
-                        </div>
-                        <div class="carousel-item">
-                            <video autoplay muted loop src="https://videos.pexels.com/video-files/29652095/12757171_1920_1080_30fps.mp4"></video>
-                        </div>
-                        <div class="carousel-item">
-                            <video autoplay muted loop src="https://videos.pexels.com/video-files/29652156/12757211_1920_1080_30fps.mp4"></video>
-                        </div>
-                        <div class="carousel-item">
-                            <video autoplay muted loop src="https://videos.pexels.com/video-files/29652160/12757221_1920_1080_30fps.mp4"></video>
-                        </div>
-                        <div class="carousel-item">
-                            <video autoplay muted loop src="https://videos.pexels.com/video-files/29653086/12757422_1920_1080_30fps.mp4"></video>
-                        </div>
-                        <div class="carousel-item">
-                            <video autoplay muted loop src="https://videos.pexels.com/video-files/29653315/12757499_1920_1080_30fps.mp4"></video>
-                        </div>
-                        <div class="carousel-item">
-                            <video autoplay muted loop src=""></video>
-                        </div>
-                        <div class="carousel-item">
-                            <video autoplay muted loop src=""></video>
-                        </div>
-                        <div class="carousel-item">
-                            <video autoplay muted loop src=""></video>
+        <section id="memories">
+            <section class="sec-col1 text-center">
+                <h1 class="slide-h mem-h">Our Memories</h1>
+                <div class="grid-wrapper">
+                    <div class="box1">
+                        <img src="https://i.imgur.com/tyVfxlJ.jpeg" alt="" />
+                    </div>
+                    <div class="box2">
+                        <img src="https://i.imgur.com/4caUiNQ.jpeg" alt="" />
+                    </div>
+                    <div class="tall">
+                        <img src="https://i.imgur.com/uENR4GY.png" alt="">
+                    </div>
+                    <div class="box2">
+                        <img src="https://i.imgur.com/ZsHizxd.jpeg" alt="" />
+                    </div>
+                    <div class="box1">
+                        <img src="https://i.imgur.com/cYPQdet.jpeg" alt="" />
+                    </div>
+                    <div class="box2">
+                        <img src="https://i.imgur.com/iRQbKZz.jpeg" alt="" />
+                    </div>
+                    <div class="box2">
+                        <img src="https://i.imgur.com/V6P6tuv.jpeg" alt="" />
+                    </div>
+                    <div class="box1">
+                        <img src="https://i.imgur.com/0MF8kIn.jpeg" alt="" />
+                    </div>
+                </div>
+            </section>
+
+            <section class="sec-col2 text-center">
+                <h1 class="slide-h mem-h">Our Memories</h1>
+                <div class="grid-wrapper">
+                    <div class="box1">
+                        <img src="https://i.imgur.com/tyVfxlJ.jpeg" alt="" />
+                    </div>
+                    <div class="tall">
+                        <img src="https://i.imgur.com/uENR4GY.png" alt="">
+                    </div>
+                    <div class="box2">
+                        <img src="https://i.imgur.com/4caUiNQ.jpeg" alt="" />
+                    </div>
+                    <div class="box2">
+                        <img src="https://i.imgur.com/ZsHizxd.jpeg" alt="" />
+                    </div>
+                    <div class="box1">
+                        <img src="https://i.imgur.com/cYPQdet.jpeg" alt="" />
+                    </div>
+                    <div class="box2">
+                        <img src="https://i.imgur.com/iRQbKZz.jpeg" alt="" />
+                    </div>
+                    <div class="box2">
+                        <img src="https://i.imgur.com/V6P6tuv.jpeg" alt="" />
+                    </div>
+                    <div class="box1">
+                        <img src="https://i.imgur.com/0MF8kIn.jpeg" alt="" />
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <section class="projectsSec" id="projects">
+            <div class="container">
+                <section class="sec-slide">
+                    <div class="lvl">
+                        <h1 class="slide-h">Our Projects</h1>
+                        <div class="dropdown-center mt-auto mb-auto">
+                            <button class=" dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                URLs!
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" target="_blank" href="https://spacexclone.niat.tech">SpaceX Clone</a></li>
+                                <li><a class="dropdown-item" target="_blank" href="https://amberhorizons.niat.tech/">Amber Horizons</a></li>
+                                <li><a class="dropdown-item" target="_blank" href="https://mediumlite.niat.tech/">Medium Clone</a></li>
+                                <li><a class="dropdown-item" target="_blank" href="https://sqspaceclone.niat.tech/">Square Space Clone</a></li>
+                                <li><a class="dropdown-item" target="_blank" href="https://udemylite.niat.tech/">Udemy Clone</a></li>
+                                <li><a class="dropdown-item" target="_blank" href="https://redstorejb.niat.tech/">Red Store Clone</a></li>
+                                <li><a class="dropdown-item" target="_blank" href="http://S5apple.niat.tech">Apple Clone</a></li>
+                                <li><a class="dropdown-item" target="_blank" href="https://amvhotstarclone.niat.tech">Hotstar Clone</a></li>
+                                <li><a class="dropdown-item" target="_blank" href="https://webalchemyhezzj.niat.tech/">Formula 1</a></li>
+                                <li><a class="dropdown-item" target="_blank" href="https://dishdash.niat.tech">Dish Dash</a></li>
+                                <li><a class="dropdown-item" target="_blank" href="https://kissankart.niat.tech/">Kissan Kart</a></li>
+                                <li><a class="dropdown-item" target="_blank" href="https://ucgoodslite.niat.tech/">Uncommon Goods Clone</a></li>
+                                <li><a class="dropdown-item" target="_blank" href="https://sushtastyhub.niat.tech/">Tasty Hub</a></li>
+                                <li><a class="dropdown-item" target="_blank" href="https://silly-gumption-f89058.netlify.app/">Pokedex</a></li>
+                                <li><a class="dropdown-item" target="_blank" href="https://rorivi.netlify.app/">Youtube Clone</a></li>
+                                <li><a class="dropdown-item" target="_blank" href="https://neffexindia.niat.tech/">NEFFEX</a></li>
+                                <li><a class="dropdown-item" target="_blank" href="https://starlit.niat.tech/">Coffee House</a></li>
+                                <li><a class="dropdown-item" target="_blank" href="https://keen-belekoy-0bef72.netlify.app/#courses">Cosmic Minds</a></li>
+                                <li><a class="dropdown-item" target="_blank" href="https://ceruleanwl.niat.tech">Cerulean Wanderlust</a></li>
+                            </ul>
                         </div>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#videoCarousel" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#videoCarousel" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    </button>
+
+                    <div class="slider-cont">
+                        <ul class="carousel">
+                            <li class="items main-pos" id="1">
+                                <video autoplay muted loop src="https://videos.pexels.com/video-files/29652413/12757236_1920_1080_30fps.mp4"></video>
+                            </li>
+                            <li class="items right-pos" id="2">
+                                <video autoplay muted loop src="https://videos.pexels.com/video-files/29652095/12757171_1920_1080_30fps.mp4"></video>
+                            </li>
+                            <li class="items back-pos" id="3">
+                                <video autoplay muted loop src="https://videos.pexels.com/video-files/29652156/12757211_1920_1080_30fps.mp4"></video>
+                            </li>
+                            <li class="items back-pos" id="4">
+                                <video autoplay muted loop src="https://videos.pexels.com/video-files/29652160/12757221_1920_1080_30fps.mp4"></video>
+                            </li>
+                            <li class="items back-pos" id="5">
+                                <video autoplay muted loop src="https://videos.pexels.com/video-files/29653086/12757422_1920_1080_30fps.mp4"></video>
+                            </li>
+                            <li class="items back-pos" id="6">
+                                <video autoplay muted loop src="https://videos.pexels.com/video-files/29653315/12757499_1920_1080_30fps.mp4"></video>
+                            </li>
+                            <li class="items left-pos" id="7">
+                                <video autoplay muted loop src="https://videos.pexels.com/video-files/29658010/12758813_1920_1080_30fps.mp4"></video>
+                            </li>
+                            <li class="items back-pos" id="8">
+                                <video autoplay muted loop src="https://videos.pexels.com/video-files/29660344/12759665_1920_1080_30fps.mp4"></video>
+                            </li>
+                            <li class="items left-pos" id="9">
+                                <video autoplay muted loop src="https://videos.pexels.com/video-files/29658618/12758891_1920_1080_30fps.mp4"></video>
+                            </li>
+                            <li class="items left-pos" id="10">
+                                <video autoplay muted loop src="https://videos.pexels.com/video-files/29660396/12759679_1920_1080_30fps.mp4"></video>
+                            </li>
+                            <li class="items left-pos" id="11">
+                                <video autoplay muted loop src="https://videos.pexels.com/video-files/29661625/12760200_1920_1080_30fps.mp4"></video>
+                            </li>
+                            <li class="items left-pos" id="12">
+                                <video autoplay muted loop src="https://i.imgur.com/RFchnbv.mp4"></video>
+                            </li>
+                            <li class="items left-pos" id="13">
+                                <video autoplay muted loop src="https://i.imgur.com/WFXVRYl.mp4"></video>
+                            </li>
+                            <li class="items left-pos" id="14">
+                                <video autoplay muted loop src="https://i.imgur.com/CRWata8.mp4"></video>
+                            </li>
+                            <li class="items left-pos" id="15">
+                                <video autoplay muted loop src="https://i.imgur.com/AYg7yjA.mp4"></video>
+                            </li>
+                            <li class="items left-pos" id="16">
+                                <video autoplay muted loop src="https://i.imgur.com/OB3m8nO.mp4"></video>
+                            </li>
+                            <li class="items left-pos" id="17">
+                                <video autoplay muted loop src="https://i.imgur.com/2JX9zrJ.mp4"></video>
+                            </li>
+                            <li class="items left-pos" id="18">
+                                <video autoplay muted loop src="https://videos.pexels.com/video-files/29672438/12763525_1920_1080_30fps.mp4"></video>
+                            </li>
+                            <li class="items left-pos" id="19">
+                                <video autoplay muted loop src="https://videos.pexels.com/video-files/29660581/12759814_1920_1080_30fps.mp4"></video>
+                            </li>
+                        </ul>
+                        <span>
+                            <button class="arr-btn" type="button" id="prev"><i class="arr-i bi bi-arrow-left-short"></i></button>
+                            <button class="arr-btn" type="button" id="next"><i class="arr-i bi bi-arrow-right-short"></i></button>
+                        </span>
+                    </div>
+                </section>
+
+                <section class="sec-alt">
+                    <div class="lvl">
+                        <h1 class="slide-h">Our Projects</h1>
+                        <div class="dropdown-center mt-auto mb-auto">
+                            <button class=" dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                URLs!
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" target="_blank" href="https://spacexclone.niat.tech">SpaceX Clone</a></li>
+                                <li><a class="dropdown-item" target="_blank" href="https://amberhorizons.niat.tech/">Amber Horizons</a></li>
+                                <li><a class="dropdown-item" target="_blank" href="https://mediumlite.niat.tech/">Medium Clone</a></li>
+                                <li><a class="dropdown-item" target="_blank" href="https://sqspaceclone.niat.tech/">Square Space Clone</a></li>
+                                <li><a class="dropdown-item" target="_blank" href="https://udemylite.niat.tech/">Udemy Clone</a></li>
+                                <li><a class="dropdown-item" target="_blank" href="https://redstorejb.niat.tech/">Red Store Clone</a></li>
+                                <li><a class="dropdown-item" target="_blank" href="http://S5apple.niat.tech">Apple Clone</a></li>
+                                <li><a class="dropdown-item" target="_blank" href="https://amvhotstarclone.niat.tech">Hotstar Clone</a></li>
+                                <li><a class="dropdown-item" target="_blank" href="https://webalchemyhezzj.niat.tech/">Formula 1</a></li>
+                                <li><a class="dropdown-item" target="_blank" href="https://dishdash.niat.tech">Dish Dash</a></li>
+                                <li><a class="dropdown-item" target="_blank" href="https://kissankart.niat.tech/">Kissan Kart</a></li>
+                                <li><a class="dropdown-item" target="_blank" href="https://ucgoodslite.niat.tech/">Uncommon Goods Clone</a></li>
+                                <li><a class="dropdown-item" target="_blank" href="https://sushtastyhub.niat.tech/">Tasty Hub</a></li>
+                                <li><a class="dropdown-item" target="_blank" href="https://silly-gumption-f89058.netlify.app/">Pokedex</a></li>
+                                <li><a class="dropdown-item" target="_blank" href="https://rorivi.netlify.app/">Youtube Clone</a></li>
+                                <li><a class="dropdown-item" target="_blank" href="https://neffexindia.niat.tech/">NEFFEX</a></li>
+                                <li><a class="dropdown-item" target="_blank" href="https://starlit.niat.tech/">Coffee House</a></li>
+                                <li><a class="dropdown-item" target="_blank" href="https://keen-belekoy-0bef72.netlify.app/#courses">Cosmic Minds</a></li>
+                                <li><a class="dropdown-item" target="_blank" href="https://ceruleanwl.niat.tech">Cerulean Wanderlust</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="carousel-container">
+                        <div id="videoCarousel" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <video autoplay muted loop src="https://videos.pexels.com/video-files/29652413/12757236_1920_1080_30fps.mp4"></video>
+                                </div>
+                                <div class="carousel-item">
+                                    <video autoplay muted loop src="https://videos.pexels.com/video-files/29652095/12757171_1920_1080_30fps.mp4"></video>
+                                </div>
+                                <div class="carousel-item">
+                                    <video autoplay muted loop src="https://videos.pexels.com/video-files/29652156/12757211_1920_1080_30fps.mp4"></video>
+                                </div>
+                                <div class="carousel-item" id="4">
+                                    <video autoplay muted loop>
+                                        <source src="https://videos.pexels.com/video-files/29652160/12757221_1920_1080_30fps.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                </div>
+                                <div class="carousel-item" id="5">
+                                    <video autoplay muted loop>
+                                        <source src="https://videos.pexels.com/video-files/29653086/12757422_1920_1080_30fps.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                </div>
+                                <div class="carousel-item" id="6">
+                                    <video autoplay muted loop>
+                                        <source src="https://videos.pexels.com/video-files/29653315/12757499_1920_1080_30fps.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                </div>
+                                <div class="carousel-item" id="7">
+                                    <video autoplay muted loop>
+                                        <source src="https://videos.pexels.com/video-files/29658010/12758813_1920_1080_30fps.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                </div>
+                                <div class="carousel-item" id="8">
+                                    <video autoplay muted loop>
+                                        <source src="https://videos.pexels.com/video-files/29660344/12759665_1920_1080_30fps.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                </div>
+                                <div class="carousel-item" id="9">
+                                    <video autoplay muted loop>
+                                        <source src="https://videos.pexels.com/video-files/29658618/12758891_1920_1080_30fps.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                </div>
+                                <div class="carousel-item" id="10">
+                                    <video autoplay muted loop>
+                                        <source src="https://videos.pexels.com/video-files/29660396/12759679_1920_1080_30fps.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                </div>
+                                <div class="carousel-item" id="11">
+                                    <video autoplay muted loop>
+                                        <source src="https://videos.pexels.com/video-files/29661625/12760200_1920_1080_30fps.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                </div>
+                                <div class="carousel-item" id="12">
+                                    <video autoplay muted loop>
+                                        <source src="https://i.imgur.com/RFchnbv.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                </div>
+                                <div class="carousel-item" id="13">
+                                    <video autoplay muted loop>
+                                        <source src="https://i.imgur.com/WFXVRYl.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                </div>
+                                <div class="carousel-item" id="14">
+                                    <video autoplay muted loop>
+                                        <source src="https://i.imgur.com/CRWata8.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                </div>
+                                <div class="carousel-item" id="15">
+                                    <video autoplay muted loop>
+                                        <source src="https://i.imgur.com/AYg7yjA.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                </div>
+                                <div class="carousel-item" id="16">
+                                    <video autoplay muted loop>
+                                        <source src="https://i.imgur.com/OB3m8nO.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                </div>
+                                <div class="carousel-item" id="17">
+                                    <video autoplay muted loop>
+                                        <source src="https://i.imgur.com/2JX9zrJ.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                </div>
+                                <div class="carousel-item" id="18">
+                                    <video autoplay muted loop>
+                                        <source src="https://videos.pexels.com/video-files/29672438/12763525_1920_1080_30fps.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                </div>
+                                <div class="carousel-item" id="19">
+                                    <video autoplay muted loop>
+                                        <source src="https://videos.pexels.com/video-files/29660581/12759814_1920_1080_30fps.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                </div>
+                            </div>
+                            <button class="arr-btn carousel-control-prev" type="button" data-bs-target="#videoCarousel" data-bs-slide="prev">
+                                <i class="arr-i bi bi-arrow-left-short"></i>
+                            </button>
+                            <button class="arr-btn carousel-control-next" type="button" data-bs-target="#videoCarousel" data-bs-slide="next">
+                                <i class="arr-i bi bi-arrow-right-short"></i>
+                            </button>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+
+        </section>
+
+        <section class="sec-progress">
+            <div class="bg-cont-23">
+                <div class="journey-container">
+                    <h1 class="head-jur inst-h">Our Progress</h1>
+                    <div class="progress-header">
+                        <h2>Growth Cycle 1</h2>
+                        <div class="container-c">
+                            <div class="progress-circle">
+                                <svg class="svg-23" viewBox="0 0 100 100">
+                                    <circle cx="50" cy="50" r="45" class="background"></circle>
+                                    <circle cx="50" cy="50" r="45" class="progress"></circle>
+                                </svg>
+                                <div class="percentage">0%</div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="tasks">
+                        <div class="task">
+                            <p class="para-23">Build Your Own Responsive Website</p>
+                            <div class="percentage-circle" data-percentage="59">0%</div>
+                        </div>
+                        <div class="task">
+                            <p class="para-23">Programming Foundations</p>
+                            <div class="percentage-circle" data-percentage="71">0%</div>
+                        </div>
+                        <div class="task">
+                            <p class="para-23">Communicative English Foundations - I</p>
+                            <div class="percentage-circle" data-percentage="63">0%</div>
+                        </div>
+                        <div class="task">
+                            <p class="para-23">Quantitative Aptitude</p>
+                            <div class="percentage-circle" data-percentage="57">0%</div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
-        
-    </main> -->
-        
-        
-    <script src="s5.js">
-        
-    </script>
+
+        <section class="inst-sec" id="instructors">
+            <h1 class="inst-h">Our Instructors</h1>
+
+            <div class="container swiper">
+                <div class="slider-wrapper">
+                    <div class="card-list swiper-wrapper">
+                        <div class="card-item swiper-slide">
+                            <img src="https://i.postimg.cc/Jzbnwf2z/Whats-App-Image-2024-12-10-at-17-10-03-d8e0646b-1-1.jpg" alt="User Image" class="user-image">
+                            <h2 class="user-name">Nithin Sandiyala</h2>
+                            <p class="user-profession">Software Developer</p>
+                        </div>
+
+                        <div class="card-item swiper-slide">
+                            <img src="https://media.licdn.com/dms/image/v2/D5603AQE8zlrYUCHWkA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1693295948013?e=1739404800&v=beta&t=xYl09ZKb5i41i5TqFeQI8v-blU5Wsv-WyZ0lmX5q6fY" alt="User Image" class="user-image">
+                            <h2 class="user-name">Hari Krishna Daggubati</h2>
+                            <p class="user-profession">Software Developer</p>
+                        </div>
+
+                        <div class="card-item swiper-slide">
+                            <img src="https://media.licdn.com/dms/image/v2/D5603AQF2dGU6lsGBUw/profile-displayphoto-shrink_800_800/B56ZOMNrGjGcAg-/0/1733224216757?e=1739404800&v=beta&t=-4VoFfMZC5ScEnUMKtx-JMZIBgdMDAqOsnyI9eOyTr8" alt="User Image" class="user-image">
+                            <h2 class="user-name">Sneha Saha</h2>
+                            <p class="user-profession">English Instructional Designer</p>
+                        </div>
+
+                        <div class="card-item swiper-slide">
+                            <img src="https://media.licdn.com/dms/image/v2/D5603AQEjquQ3aaiwSw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1732553522885?e=1739404800&v=beta&t=4tfjVkBHDfvZpg3PnKfOTf9O0pydOckuiocFYT8LD-Q" alt="User Image" class="user-image">
+                            <h2 class="user-name">Kushal Kumar Terli</h2>
+                            <p class="user-profession">Academic Mentor</p>
+                        </div>
+
+                        <div class="card-item swiper-slide">
+                            <img src="https://media.licdn.com/dms/image/v2/D5603AQHS39gGRlExsw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1723433856102?e=1739404800&v=beta&t=2Xhz-oQ59zLeMSG9-2s1byQP3dAulTINAouBGDGMJgY" alt="User Image" class="user-image">
+                            <h2 class="user-name">Prudhvi Raj Garlapati</h2>
+                            <p class="user-profession">Aptitude Training Manager</p>
+                        </div>
+
+                        <div class="card-item swiper-slide">
+                            <img src="https://media.licdn.com/dms/image/v2/D4D03AQFZeDXHNcg5tw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1728753231395?e=1740614400&v=beta&t=Z5y-y0BmnH6MKm1pRnPCgAF8oIgNHGB2xmfC4x-v5wA" alt="User Image" class="user-image">
+                            <h2 class="user-name">Vaishnavi Sadhu</h2>
+                            <p class="user-profession">Cohort Manager</p>
+                        </div>
+                    </div>
+
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-slide-button swiper-button-prev"></div>
+                    <div class="swiper-slide-button swiper-button-next"></div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="sec-cu" id="contact">
+            <div class="container-fluid">
+                <h1 class="about-h">Contact Us</h1>
+                <div class="slider-container">
+                    <div class="slider-track">
+                        <div class="slider-item d-flex flex-column justify-content-between">
+                            <div>
+                                <h1 class="cu-h">Trishanth Reddy</h1>
+                                <h3 class="cu-hh">N24H01A0005</h3>
+                                <p class="cu-hhh">Aspiring Ethical Hacker</p>
+                            </div>
+                            <div class="cu-a w-100">
+                                <a href="https://www.linkedin.com/in/trishanth-reddy/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                            </div>
+                        </div>
+                        <div class="slider-item d-flex flex-column justify-content-between">
+                            <div>
+                                <h1 class="cu-h">Panuganti Chandana</h1>
+                                <h3 class="cu-hh">N24H01A0017</h3>
+                                <p class="cu-hhh">Aspiring Ethical Hacker</p>
+                            </div>
+                            <div class="cu-a w-100">
+                                <a href="https://www.linkedin.com/in/chandana-panuganti-41834a30a/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                            </div>
+                        </div>
+                        <div class="slider-item d-flex flex-column justify-content-between">
+                            <div>
+                                <h1 class="cu-h">Parasuramuni Sai Sankar</h1>
+                                <h3 class="cu-hh">N24H01A0022</h3>
+                                <p class="cu-hhh">Aspiring UI/UX Engineer</p>
+                            </div>
+                            <div class=" cu-a w-100">
+                                <a href="https://www.linkedin.com/in/sai-sankar-47677931b/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                            </div>
+                        </div>
+                        <div class="slider-item d-flex flex-column justify-content-between">
+                            <div>
+                                <h1 class="cu-h">Rohan Uppalapati</h1>
+                                <h3 class="cu-hh">N24H01A0034</h3>
+                                <p class="cu-hhh">Aspiring Software Developer</p>
+                            </div>
+                            <div class=" cu-a w-100">
+                                <a href="https://www.linkedin.com/in/rohan-uppalapati-98a2b3218/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                            </div>
+                        </div>
+                        <div class="slider-item d-flex flex-column justify-content-between">
+                            <div>
+                                <h1 class="cu-h">Yalamanchili Haasini</h1>
+                                <h3 class="cu-hh">N24H01A0037</h3>
+                                <p class="cu-hhh">Aspiring Ethical Hacker</p>
+                            </div>
+                            <div class=" cu-a w-100">
+                                <a href="https://www.linkedin.com/in/haasini-yalamanchili-64535130a/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                            </div>
+                        </div>
+                        <div class="slider-item d-flex flex-column justify-content-between">
+                            <div>
+                                <h1 class="cu-h">Nune Rajesh</h1>
+                                <h3 class="cu-hh">N24H01A0053</h3>
+                                <p class="cu-hhh">Aspiring Full Stack Developer</p>
+                            </div>
+                            <div class=" cu-a w-100">
+                                <a href="https://www.linkedin.com/in/rajesh-nune-500341323/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                            </div>
+                        </div>
+                        <div class="slider-item d-flex flex-column justify-content-between">
+                            <div>
+                                <h1 class="cu-h">Kasiralla Pravalikha</h1>
+                                <h3 class="cu-hh">N24H01A0059</h3>
+                                <p class="cu-hhh">Aspiring Ethical Hacker</p>
+                            </div>
+                            <div class=" cu-a w-100">
+                                <a href="https://www.linkedin.com/in/pravallika-k-258846318/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                            </div>
+                        </div>
+                        <div class="slider-item d-flex flex-column justify-content-between">
+                            <div>
+                                <h1 class="cu-h">Thummeti Pardha Saradhi</h1>
+                                <h3 class="cu-hh">N24H01A0065</h3>
+                                <p class="cu-hhh">Aspiring Software Developer</p>
+                            </div>
+                            <div class=" cu-a w-100">
+                                <a href="https://www.linkedin.com/in/pardha-saradhi-thummeti-140319312/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                            </div>
+                        </div>
+                        <div class="slider-item d-flex flex-column justify-content-between">
+                            <div>
+                                <h1 class="cu-h">Gavidi Shanmukha Vardan</h1>
+                                <h3 class="cu-hh">N24H01A0075</h3>
+                                <p class="cu-hhh">Aspiring Software Developer</p>
+                            </div>
+                            <div class=" cu-a w-100">
+                                <a href="https://www.linkedin.com/in/shanmukha-vardhan-gavidi-863403324/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                            </div>
+                        </div>
+                        <div class="slider-item d-flex flex-column justify-content-between">
+                            <div>
+                                <h1 class="cu-h">Kambala Chandra Sekhar</h1>
+                                <h3 class="cu-hh">N24H01A0086</h3>
+                                <p class="cu-hhh">Aspiring Ethical Hacker</p>
+                            </div>
+                            <div class=" cu-a w-100">
+                                <a href="https://www.linkedin.com/in/chandra-sekhar-2b8612312/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                            </div>
+                        </div>
+                        <div class="slider-item d-flex flex-column justify-content-between">
+                            <div>
+                                <h1 class="cu-h">Rithvik N</h1>
+                                <h3 class="cu-hh">N24H01A0095</h3>
+                                <p class="cu-hhh">Aspiring Software Developer</p>
+                            </div>
+                            <div class=" cu-a w-100">
+                                <a href="https://www.linkedin.com/in/neelam-rithvik-0906a3319/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                            </div>
+                        </div>
+                        <div class="slider-item d-flex flex-column justify-content-between">
+                            <div>
+                                <h1 class="cu-h">Nihal Motukuri</h1>
+                                <h3 class="cu-hh">N24H01A0106</h3>
+                                <p class="cu-hhh">Aspiring AI/ML Engineer</p>
+                            </div>
+                            <div class=" cu-a w-100">
+                                <a href="https://linkedin.com/in/nihalmotukuri" target="_blank"><i class="bi bi-linkedin"></i></a>
+                            </div>
+                        </div>
+                        <div class="slider-item d-flex flex-column justify-content-between">
+                            <div>
+                                <h1 class="cu-h">Siva Karthikeya</h1>
+                                <h3 class="cu-hh">N24H01A0116</h3>
+                            </div>
+                            <div class=" cu-a w-100">
+                                <a href="https://www.linkedin.com/in/siva-karthikeya-bonagiri-814485324/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                            </div>
+                        </div>
+                        <div class="slider-item d-flex flex-column justify-content-between">
+                            <div>
+                                <h1 class="cu-h">Dontha Ashritha</h1>
+                                <h3 class="cu-hh">N24H01A0118</h3>
+                            </div>
+                            <div class=" cu-a w-100">
+                                <a href="https://www.linkedin.com/in/ashritha-dontha-5b60bb31a/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                            </div>
+                        </div>
+                        <div class="slider-item d-flex flex-column justify-content-between">
+                            <div>
+                                <h1 class="cu-h">Karakala Ajay Sai</h1>
+                                <h3 class="cu-hh">N24H01A0128</h3>
+                            </div>
+                            <div class=" cu-a w-100">
+                                <a href="https://www.linkedin.com/in/ajay-sai-k-a71947305/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                            </div>
+                        </div>
+                        <div class="slider-item d-flex flex-column justify-content-between">
+                            <div>
+                                <h1 class="cu-h">Amarnath Vajroju</h1>
+                                <h3 class="cu-hh">N24H01A0143</h3>
+                            </div>
+                            <div class=" cu-a w-100">
+                                <a href="https://www.linkedin.com/in/amarnath-vajroju-0920b831a/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                            </div>
+                        </div>
+                        <div class="slider-item d-flex flex-column justify-content-between">
+                            <div>
+                                <h1 class="cu-h">Sama Vasavi</h1>
+                                <h3 class="cu-hh">N24H01A0153</h3>
+                            </div>
+                            <div class=" cu-a w-100">
+                                <a href="https://www.linkedin.com/in/vasavi-sama-836205323/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                            </div>
+                        </div>
+                        <div class="slider-item d-flex flex-column justify-content-between">
+                            <div>
+                                <h1 class="cu-h">Balle Rao Jai Vishnu Vardahn Rao</h1>
+                                <h3 class="cu-hh">N24H01A0154</h3>
+                            </div>
+                            <div class=" cu-a w-100">
+                                <a href="https://www.linkedin.com/in/b-jai-vishnu-vardhan-rao-7453b92b8/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                            </div>
+                        </div>
+                        <div class="slider-item d-flex flex-column justify-content-between">
+                            <div>
+                                <h1 class="cu-h">Chennamsetty Sandeep</h1>
+                                <h3 class="cu-hh">N24H01A0165</h3>
+                            </div>
+                            <div class=" cu-a w-100">
+                                <a href="https://www.linkedin.com/in/chennamsetty-sandeep-/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                            </div>
+                        </div>
+                        <div class="slider-item d-flex flex-column justify-content-between">
+                            <div>
+                                <h1 class="cu-h">Shaik Awais Nadeem</h1>
+                                <h3 class="cu-hh">N24H01A0177</h3>
+                            </div>
+                            <div class=" cu-a w-100">
+                                <a href="https://www.linkedin.com/in/san16/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                            </div>
+                        </div>
+                        <div class="slider-item d-flex flex-column justify-content-between">
+                            <div>
+                                <h1 class="cu-h">Tadakamalla Samanvay Kumar</h1>
+                                <h3 class="cu-hh">N24H01A0189</h3>
+                                <p class="cu-hhh">Aspiring Entrepreneur</p>
+                            </div>
+                            <div class=" cu-a w-100">
+                                <a href="https://www.linkedin.com/in/samanvay-kumar-tadakamalla-063806313/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slider-container-reverse">
+                    <div class="slider-track-reverse">
+                        <div class="slider-item d-flex flex-column justify-content-between">
+                            <div>
+                                <h1 class="cu-h">Jasti Dihitha</h1>
+                                <h3 class="cu-hh">N24H01A0197</h3>
+                                <p class="cu-hhh">Aspiring Ethical Hacker</p>
+                            </div>
+                            <div class=" cu-a w-100">
+                                <a href="https://www.linkedin.com/in/dihitha-jasti-4343b331a/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                            </div>
+                        </div>
+                        <div class="slider-item d-flex flex-column justify-content-between">
+                            <div>
+                                <h1 class="cu-h">Katakam Nagendra Naidu</h1>
+                                <h3 class="cu-hh">N24H01A0201</h3>
+                                <p class="cu-hhh">Aspiring Data Analyst</p>
+                            </div>
+                            <div class=" cu-a w-100">
+                                <a href="https://www.linkedin.com/in/nagendra-naidu-887ba5309/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                            </div>
+                        </div>
+                        <div class="slider-item d-flex flex-column justify-content-between">
+                            <div>
+                                <h1 class="cu-h">Kolipyaka Bala Kishan</h1>
+                                <h3 class="cu-hh">N24H01A0225</h3>
+                                <p class="cu-hhh">Aspiring Ethical Hacker</p>
+                            </div>
+                            <div class=" cu-a w-100">
+                                <a href="https://www.linkedin.com/in/ajay-bala-kishan-872947305/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                            </div>
+                        </div>
+                        <div class="slider-item d-flex flex-column justify-content-between">
+                            <div>
+                                <h1 class="cu-h">Totakura Bhavana</h1>
+                                <h3 class="cu-hh">N24H01A0226</h3>
+                                <p class="cu-hhh">Aspiring Ethical Hacker</p>
+                            </div>
+                            <div class=" cu-a w-100">
+                                <a href="https://www.linkedin.com/in/totakura-bhavana-867625317/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                            </div>
+                        </div>
+                        <div class="slider-item d-flex flex-column justify-content-between">
+                            <div>
+                                <h1 class="cu-h">Kuruva Gopi Chand</h1>
+                                <h3 class="cu-hh">N24H01A0239</h3>
+                                <p class="cu-hhh">Aspiring Full Stack Developer</p>
+                            </div>
+                            <div class=" cu-a w-100">
+                                <a href="https://www.linkedin.com/in/kuruva-gopi-chand-845613315/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                            </div>
+                        </div>
+                        <div class="slider-item d-flex flex-column justify-content-between">
+                            <div>
+                                <h1 class="cu-h">Neeripelly Vyshnavi</h1>
+                                <h3 class="cu-hh">N24H01A0252</h3>
+                                <p class="cu-hhh">Aspiring Ethical Hacker</p>
+                            </div>
+                            <div class=" cu-a w-100">
+                                <a href="https://www.linkedin.com/in/vyshnavi-neeripelly-3ba411320/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                            </div>
+                        </div>
+                        <div class="slider-item d-flex flex-column justify-content-between">
+                            <div>
+                                <h1 class="cu-h">Jangala Bhuvanesh</h1>
+                                <h3 class="cu-hh">N24H01A0253</h3>
+                                <p class="cu-hhh">Aspiring Software Developer</p>
+                            </div>
+                            <div class=" cu-a w-100">
+                                <a href="https://www.linkedin.com/in/bhuvanesh-jangala-497930314/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                            </div>
+                        </div>
+                        <div class="slider-item d-flex flex-column justify-content-between">
+                            <div>
+                                <h1 class="cu-h">Avala Srinivasa Rao</h1>
+                                <h3 class="cu-hh">N24H01A0267</h3>
+                                <p class="cu-hhh">Aspiring Ethical Hacker</p>
+                            </div>
+                            <div class=" cu-a w-100">
+                                <a href="https://www.linkedin.com/in/srinivasarao-avala-5b27b331a/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                            </div>
+                        </div>
+                        <div class="slider-item d-flex flex-column justify-content-between">
+                            <div>
+                                <h1 class="cu-h">Natuva Mokshith</h1>
+                                <h3 class="cu-hh">N24H01A0276</h3>
+                                <p class="cu-hhh">Aspiring Software Developer</p>
+                            </div>
+                            <div class=" cu-a w-100">
+                                <a href="https://www.linkedin.com/in/natuva-mokshith-42863a30b/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                            </div>
+                        </div>
+                        <div class="slider-item d-flex flex-column justify-content-between">
+                            <div>
+                                <h1 class="cu-h">Eluri Vanni</h1>
+                                <h3 class="cu-hh">N24H01A0289</h3>
+                                <p class="cu-hhh">Aspiring Software Developer</p>
+                            </div>
+                            <div class=" cu-a w-100">
+                                <a href="https://www.linkedin.com/in/eluri-vanni-7a003a318/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                            </div>
+                        </div>
+                        <div class="slider-item d-flex flex-column justify-content-between">
+                            <div>
+                                <h1 class="cu-h">Nerolla Thirumala Pranav</h1>
+                                <h3 class="cu-hh">N24H01A0310</h3>
+                                <p class="cu-hhh">Aspiring Ethical Hacker</p>
+                            </div>
+                            <div class=" cu-a w-100">
+                                <a href="https://www.linkedin.com/in/pranay-nerolla-409483323/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                            </div>
+                        </div>
+                        <div class="slider-item d-flex flex-column justify-content-between">
+                            <div>
+                                <h1 class="cu-h">Kajuluri Bhavani Prakash</h1>
+                                <h3 class="cu-hh">N24H01A0333</h3>
+                                <p class="cu-hhh">Aspiring Software Developer</p>
+                            </div>
+                            <div class=" cu-a w-100">
+                                <a href="https://www.linkedin.com/in/bhavaniprakashkajuluri200627/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                            </div>
+                        </div>
+                        <div class="slider-item d-flex flex-column justify-content-between">
+                            <div>
+                                <h1 class="cu-h">Sushmita Prashant Mahajan</h1>
+                                <h3 class="cu-hh">N24H01A0336</h3>
+                                <p class="cu-hhh">Aspiring AI/ML Engineer</p>
+                            </div>
+                            <div class=" cu-a w-100">
+                                <a href="https://www.linkedin.com/in/sushmita-mahajan-28-dec/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                            </div>
+                        </div>
+                        <div class="slider-item d-flex flex-column justify-content-between">
+                            <div>
+                                <h1 class="cu-h">Rounak Duttaluri</h1>
+                                <h3 class="cu-hh">N24H01A0348</h3>
+                                <p class="cu-hhh">Aspiring Software Developer</p>
+                            </div>
+                            <div class=" cu-a w-100">
+                                <a href="https://www.linkedin.com/in/duttaluri-rounak-70055931b/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slider-container">
+                    <div class="slider-track1">
+                        <div class="slider-item d-flex flex-column justify-content-between">
+                            <div>
+                                <h1 class="cu-h">Pindi Anila</h1>
+                                <h3 class="cu-hh">N24H01A0365</h3>
+                                <p class="cu-hhh">Aspiring Software Developer</p>
+                            </div>
+                            <div class=" cu-a w-100">
+                                <a href="https://www.linkedin.com/in/pindi-anila-330628317/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                            </div>
+                        </div>
+                        <div class="slider-item d-flex flex-column justify-content-between">
+                            <div>
+                                <h1 class="cu-h">Bhargav Dhevandla</h1>
+                                <h3 class="cu-hh">N24H01A0384</h3>
+                                <p class="cu-hhh">Aspiring Software Developer</p>
+                            </div>
+                            <div class=" cu-a w-100">
+                                <a href="https://www.linkedin.com/in/bhargav-devandla-5b247a316/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                            </div>
+                        </div>
+                        <div class="slider-item d-flex flex-column justify-content-between">
+                            <div>
+                                <h1 class="cu-h">Kandakatla Nemith Reddy</h1>
+                                <h3 class="cu-hh">N24H01A0404</h3>
+                                <p class="cu-hhh">Aspiring Software Developer</p>
+                            </div>
+                            <div class=" cu-a w-100">
+                                <a href="https://www.linkedin.com/in/nemith-reddy-aa8011318/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                            </div>
+                        </div>
+                        <div class="slider-item d-flex flex-column justify-content-between">
+                            <div>
+                                <h1 class="cu-h">K Lathika Yadav</h1>
+                                <h3 class="cu-hh">N24H01A0406</h3>
+                                <p class="cu-hhh">Aspiring Software Developer</p>
+                            </div>
+                            <div class=" cu-a w-100">
+                                <a href="https://www.linkedin.com/in/lathika-yadav-9a62b6321/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                            </div>
+                        </div>
+                        <div class="slider-item d-flex flex-column justify-content-between">
+                            <div>
+                                <h1 class="cu-h">B V Anirudh Patnaik</h1>
+                                <h3 class="cu-hh">N24H01A0420</h3>
+                                <p class="cu-hhh">Aspiring Software Developer</p>
+                            </div>
+                            <div class=" cu-a w-100">
+                                <a href="https://www.linkedin.com/in/b-v-anirudh-patnaik-5225b2317/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                            </div>
+                        </div>
+                        <div class="slider-item d-flex flex-column justify-content-between">
+                            <div>
+                                <h1 class="cu-h">Chiningani Varun Tej</h1>
+                                <h3 class="cu-hh">N24H01A0431</h3>
+                                <p class="cu-hhh">Aspiring Entrepreneur</p>
+                            </div>
+                            <div class=" cu-a w-100">
+                                <a href="https://www.linkedin.com/in/ch-varun-tej-851304317/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                            </div>
+                        </div>
+                        <div class="slider-item d-flex flex-column justify-content-between">
+                            <div>
+                                <h1 class="cu-h">Gunda Bhavana</h1>
+                                <h3 class="cu-hh">N24H01A0442</h3>
+                                <p class="cu-hhh">Aspiring Software Developer</p>
+                            </div>
+                            <div class=" cu-a w-100">
+                                <a href="https://www.linkedin.com/in/bhavana-gunda-2881b6317/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                            </div>
+                        </div>
+                        <div class="slider-item d-flex flex-column justify-content-between">
+                            <div>
+                                <h1 class="cu-h">Vishwa Teja</h1>
+                                <h3 class="cu-hh">N24H01A0452</h3>
+                                <p class="cu-hhh">Aspiring Software Developer</p>
+                            </div>
+                            <div class=" cu-a w-100">
+                                <a href="https://www.linkedin.com/in/vishwateja-bamandla-046099310/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                            </div>
+                        </div>
+                        <div class="slider-item d-flex flex-column justify-content-between">
+                            <div>
+                                <h1 class="cu-h">Karthik Goud</h1>
+                                <h3 class="cu-hh">N24H01A0486</h3>
+                                <p class="cu-hhh">Aspiring Ethical Hacker</p>
+                            </div>
+                            <div class=" cu-a w-100">
+                                <a href="https://www.linkedin.com/in/karthik-goud-345796317/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                            </div>
+                        </div>
+                        <div class="slider-item d-flex flex-column justify-content-between">
+                            <div>
+                                <h1 class="cu-h">Vaibhav Bairi</h1>
+                                <h3 class="cu-hh">N24H01A0499</h3>
+                                <p class="cu-hhh">Aspiring Software Developer</p>
+                            </div>
+                            <div class=" cu-a w-100">
+                                <a href="https://www.linkedin.com/in/vaibhav-bairi-58b805313/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                            </div>
+                        </div>
+                        <div class="slider-item d-flex flex-column justify-content-between">
+                            <div>
+                                <h1 class="cu-h">Palepu Harshitha</h1>
+                                <h3 class="cu-hh">N24H01A0573</h3>
+                                <p class="cu-hhh">Aspiring Software Developer</p>
+                            </div>
+                            <div class=" cu-a w-100">
+                                <a href="https://www.linkedin.com/in/palepu-harshitha-741ba4309/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-sec" id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <h1 class="about-h">About Us</h1>
+                        <p class="about-p">We’re the vibrant Section 5 of NIAT, where creativity meets curiosity. Our diverse talents, from coding wizards to artistic geniuses, make us a family. Together, we celebrate every small victory, from acing assignments to rocking stage performances. We’re more than classmates; we’re a community of dreamers and doers!</p>
+                    </div>
+                    <div class="col-12">
+                        <img src="" alt="" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="sec-founders">
+            <h1 class="inst-h">Our Founders</h1>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-4">
+                        <figure class="snip1336 ms-auto me-auto">
+                            <img src="https://i.postimg.cc/vZ9p0MS3/nxtwave-newbanner-1.jpg" alt="sample87" />
+                            <figcaption class="text-center">
+                                <img src="https://media.licdn.com/dms/image/v2/D5603AQGOxq6FamuWMQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1680836985442?e=1739404800&v=beta&t=nIVTjRCq4WFxQq_3soAWwygtjO97qWsACZFoTQWHDJ8" alt="profile-sample4" class="profile" />
+                                <h2>Rahul Attuluri</h2>
+                                <h5 class="f-s">Co-founder & CEO<br />- NxtWave</h5>
+                                <p>Past: CyberEye (CTO), Amazon, Bwin<br />Alum: IIIT Hyderabad</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <figure class="snip1336 hover ms-auto me-auto">
+                            <img src="https://i.postimg.cc/vZ9p0MS3/nxtwave-newbanner-1.jpg" alt="sample74" />
+                            <figcaption class="text-center">
+                                <img src="https://media.licdn.com/dms/image/v2/C4E03AQF1JPw0V6IhaA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1517240592643?e=1739404800&v=beta&t=S6Tn6RNOSJeSmuLnzCyrc6PD4nbPfwlSTDlbtIH9ByQ" alt="profile-sample2" class="profile" />
+                                <h2>Sashank Gujjula</h2>
+                                <h5 class="f-s">Co-founder &<br />Head, Customer Experience<br />- NxtWave</h5>
+                                <p>Past: iB Hubs (VP, Student Relations)<br />Alum: IIT Bombay (AIR 119)</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <figure class="snip1336 ms-auto me-auto">
+                            <img src="https://i.postimg.cc/vZ9p0MS3/nxtwave-newbanner-1.jpg" alt="sample69" />
+                            <figcaption class="text-center">
+                                <img src="https://media.licdn.com/dms/image/v2/D5603AQHV2Ltmc9iO3Q/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1724134022331?e=1739404800&v=beta&t=fcWTQ-RdZMtrW7V7muvLQoLxg3usD_vHI2uQvWEy9-E" alt="profile-sample5" class="profile" />
+                                <h2>Anupam Pederla</h2>
+                                <h5 class="f-s">Co-founder & COO<br />- NxtWave</h5>
+                                <p>Past: iB Hubs (VP, Global Business)<br />Alum: IIT Kharagpur</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="sec-feed d-flex flex-column align-items-center">
+            <h1 class="inst-h">Give Us Your Feedback</h1>
+            <iframe class="fill-frame" src="https://docs.google.com/forms/d/e/1FAIpQLSewCORMzpQNo6djC0NGKL5jw5-IYoarR2EGnJ_CffnQDa8Wdw/viewform?embedded=true" height="400" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        </section>
+    </main>
+
+    <footer class="sec-footer text-center text-lg-start">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-4 mb-4 about-section">
+                    <div class="foot-mn d-flex align-items-center">
+                        <a class="home-it" href="#home">
+                            <img class="logo1" src="https://i.postimg.cc/fyGMMR4V/output-onlinepngtools.png" alt="niat-logo">
+                            <h1 class="nav-hh">Section 5</h1>
+                        </a>
+                    </div>
+                    <p class="foot-p">NxtWave Institute of Advanced Technologies (NIAT)</p>
+                </div>
+
+                <div class="col-lg-2 mb-4 footer-links">
+                    <h5 class="footer-heading">Quick Links</h5>
+                    <a href="#home">Home</a>
+                    <a href="#memories">Gallery</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#instructors">Instructors</a>
+                    <a href="#contact">Contact Us</a>
+                    <a href="#about">About Us</a>
+                </div>
+
+                <div class="col-lg-3 mb-4 contact-info">
+                    <div class="d-flex justify-content-center">
+                        <h5 class="footer-heading me-2">Find Us..</h5>
+                        <i class="bi bi-geo-alt"></i>
+                    </div>
+                    <iframe class="w-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7613.709275212735!2d78.34890952088502!3d17.418762288857238!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb93000e069dbb%3A0x88d2dc94312138f!2s(NIAT)%20Nxtwave%20institute%20of%20advanced%20technology!5e0!3m2!1sen!2sin!4v1733472163729!5m2!1sen!2sin" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+                <div class="col-lg-3 mb-4 social-icons d-flex flex-column align-items-center">
+                    <h5 class="footer-heading text-center">Follow Us</h5>
+                    <div class="d-flex d-inline-block me-auto ms-auto">
+                        <a target="_blank" href="https://www.linkedin.com/school/nxtwave-institute-of-advanced-technologies/"><i class="bi bi-linkedin"></i></a>
+                        <a target="_blank" href="https://www.instagram.com/niat_india/"><i class="bi bi-instagram"></i></a>
+                        <a target="_blank" href="https://x.com/NIAT_India"><i class="bi bi-twitter-x"></i></a>
+                        <a target="_blank" href="https://www.youtube.com/@NIATIndia."><i class="bi bi-youtube"></i></a>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                &copy; 2024 The Class of S5. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="s5.js"></script>
 
 </body>
+
 </html>
