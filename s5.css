@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Asap+Condensed:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bebas+Neue&family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Cinzel+Decorative:wght@400;700;900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Cormorant+Unicase:wght@300;400;500;600;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Nanum+Myeongjo&family=Oswald:wght@200..700&family=Parkinsans:wght@300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Cormorant+Unicase:wght@300;400;500;600;700&display=swap');
+
+header {
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    padding: 0;
+    z-index: 5000;
+    transition: opacity 0.8s ease, visibility 0.8s ease;
+}
+/* .navbar {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1400px;
+    margin-right: 46px;
+    margin-left: 46px;
+    color: white;
+    font-family: "Cormorant Unicase", serif;
+    padding: 0;
+} */
+.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.header.visible {
+    background: #0000006b;
+}
+
+.nav-main {
+    display: flex;
+    margin-left: 35px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.nav-secndry {
+    display: flex;
+}
+
+.logo {
+    height: 80px;
+    aspect-ratio: 1 / 1;    
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.nav-list {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-family: 'Parkinsons', sans-serif;
+    font-size: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.main-cont {
+    height: 100vh;
+    position: relative;
+    background-color: rgb(14, 14, 66);
+    padding-top: 25vh;
+    padding-left: 30px;
+    padding-right: 30px;
+    animation-name: slideUp;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    transition: color 1;
+    color: aliceblue;
+    transition: color 2s;
+}
+
+.nav-h {
+  font-size: 20vh;
+  font-family: "Archivo Black", sans-serif;
+}
+
+@keyframes slideUp {
+  from {
+    padding-top: 40vh;
+    color: transparent;
+  }
+  to {
+    padding-top: 25vh;
+    color: aliceblue;
+  }
+}
+
+.sec-slide {
+  padding: 20px;
+  background-color: #e0e0e059;
+  height: 100vh;
+}
+
+.slider-cont {
+  width: 40em;
+  margin: 10px auto;
+  position: relative;
+  padding: 0 25px;
+  padding-top: 35px;
+}
+  
+  .slide-h {
+    font-size: 45px;
+    font-family: "Oswald", sans-serif;
+    font-weight: 500;
+    letter-spacing: 3px;
+    line-height: 50px;
+    justify-self: center;
+}
+
+  .items {
+    position: absolute;
+    height: 300px;
+    aspect-ratio: 16 / 9;
+    background: #333;
+    display: inline-block;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    overflow: hidden;
+  }
+  
+  .main-pos {
+    margin-left: 2em !important;
+    z-index: 3000;
+  }
+  
+  .left-pos {
+    opacity: .3;
+    margin-left: -17em !important;
+    z-index: 1000;
+    -webkit-transform: scale(.75);
+    -moz-transform: scale(.75);
+    transform: scale(.75);
+  }
+  
+  .back-pos {
+    margin-left: 2em !important;
+    opacity: .05;
+    -webkit-transform: scale(.5);
+    -moz-transform: scale(.5);
+    transform: scale(.5);
+  }
+  
+  .right-pos {
+    opacity: .3;
+    margin-left:  21em !important;
+    z-index: 1000;
+    -webkit-transform: scale(.75);
+    -moz-transform: scale(.75);
+    transform: scale(.75);
+  }
+
+  span {
+    position: relative;
+    margin: 0 auto;
+    left: 17em;
+    top: 20em;
+  }
+
+  li video {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+  }
+
+  span input {
+    background-color: #0000007c;
+    color: white;
+    border-radius: 8px;
+    padding: 5px;
+  }
+
+  .carousel-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.carousel-item video {
+    aspect-ratio: 16/ 9;
+    height: 50vh;
+    object-fit: cover;
+}
+
+.carousel-controls button {
+    background-color: grey;
+    border: none;
+    color: #ffffff;
+    font-size: 24px;
+}
+
+  .sec-2 {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .vid-main {
+    width: 900px;
+    width: 600px;
+    min-width: 400px;
+    aspect-ratio: 16 / 9;
+    object-fit: contain;
+    border-radius: 25px;
+    border: 3px solid rgb(171, 177, 178);
+    outline: 3px solid rgb(212, 147, 147);
+  }
+
+  .sec-alt {
+    display: none;
+  }
+
+  @media (max-width: 1100px) {
+    .sec-slide {
+      display: none;
+    }
+    .sec-alt {
+      display: block;
+      padding: 20px;
+      background-color: #e0e0e059;
+      height: 100vh;
+    }
+  }
+
+
+  .navbar-custom {
+    background-color: #333;
+    color: white;
+}
+
+.nav-link {
+    color: white !important;
+}
+
+.dropdown-menu {
+    display: none; /* Hide dropdown initially */
+    opacity: 0; /* Transparent initially */
+    transform: translateY(-20px); /* Move up initially */
+    transition: all 0.3s ease; /* Smooth animation */
+}
+
+.dropdown-menu.show {
+    display: block !important; /* Show dropdown */
+    opacity: 1; /* Fully visible */
+    transform: translateY(0); /* Slide into position */
+}
+
+.dropdown-item {
+    color: white !important;
+}
+
+.dropdown-item:hover {
+    background-color: #555;
+}
+.navbar-toggler:focus {
+  outline: none; /* Removes focus outline */
+  box-shadow: none; /* Removes focus border/shadow */
+}
+ 
+.navbar-toggler-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1.5em; 
+  height: 1.5em;
+  color: white;
+}
+
+.bi-list {
+  font-size: 1.5em; /* Adjust size if needed */
+  color: white;
+}

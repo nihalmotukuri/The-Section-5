@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Class of Section 5</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="s5.css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.0.min.js"></script>
+    <script type="text/javascript" src="js/jquery.waterwheelCarousel.min.js"></script>
+  
+</head>
+<body>
+    <!-- <header class="header">
+        <nav class="navbar">
+            <div class="nav-main">
+                <img class="logo" src="https://i.postimg.cc/fyGMMR4V/output-onlinepngtools.png" alt="niat-logo">
+            </div>
+
+            <div class="nav-secndry">
+                <i class="nav-list bi bi-list"></i>
+            </div>
+        </nav>
+    </header> -->
+
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container-fluid">
+            <a class="navbar-brand text-white" href="#">My Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon">
+                    <i class="bi bi-list"></i>
+                </span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Web Development</a></li>
+                            <li><a class="dropdown-item" href="#">Design</a></li>
+                            <li><a class="dropdown-item" href="#">Marketing</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- <main>
+        <section class="main-cont">
+            <h1 class="nav-h">The Class of<br/> Section 5</h1>
+        </section>
+
+        <section class="sec-2">
+            <video class="vid-main" controls autoplay muted loop src=""></video>
+        </section>
+
+        <section class="sec-slide">
+            <h1 class="slide-h">Our Projects</h1>
+            <div class="slider-cont">
+                <ul class="carousel">
+                    <li class="items main-pos" id="1">
+                        <video autoplay muted loop src="https://videos.pexels.com/video-files/29652413/12757236_1920_1080_30fps.mp4"></video>
+                    </li>
+                    <li class="items right-pos" id="2">
+                        <video autoplay muted loop src="https://videos.pexels.com/video-files/29652095/12757171_1920_1080_30fps.mp4"></video>
+                    </li>
+                    <li class="items back-pos" id="3">
+                        <video autoplay muted loop src="https://videos.pexels.com/video-files/29652156/12757211_1920_1080_30fps.mp4"></video>
+                    </li>
+                    <li class="items back-pos" id="4">
+                        <video autoplay muted loop src="https://videos.pexels.com/video-files/29652160/12757221_1920_1080_30fps.mp4"></video>
+                    </li>
+                    <li class="items back-pos" id="5">
+                        <video autoplay muted loop src="https://videos.pexels.com/video-files/29653086/12757422_1920_1080_30fps.mp4"></video>
+                    </li>
+                    <li class="items back-pos" id="6">
+                        <video autoplay muted loop src="https://videos.pexels.com/video-files/29653315/12757499_1920_1080_30fps.mp4"></video>
+                    </li>
+                    <li class="items left-pos" id="7">
+                        <video autoplay muted loop src=""></video>
+                    </li>
+                    <li class="items back-pos" id="8">
+                        <video autoplay muted loop src=""></video>
+                    </li>
+                    <li class="items left-pos" id="9">
+                        <video autoplay muted loop src=""></video>
+                </ul>
+                <span>
+                    <input type="button" value="Prev" id="prev">
+                    <input type="button" value="Next" id="next">
+                </span>
+            </div>
+        </section>
+
+        <section class="sec-alt">
+            <h1 class="slide-h">Our Projects</h1>
+            <div class="carousel-container">
+                <div id="videoCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <video autoplay muted loop src="https://videos.pexels.com/video-files/29652413/12757236_1920_1080_30fps.mp4"></video>
+                        </div>
+                        <div class="carousel-item">
+                            <video autoplay muted loop src="https://videos.pexels.com/video-files/29652095/12757171_1920_1080_30fps.mp4"></video>
+                        </div>
+                        <div class="carousel-item">
+                            <video autoplay muted loop src="https://videos.pexels.com/video-files/29652156/12757211_1920_1080_30fps.mp4"></video>
+                        </div>
+                        <div class="carousel-item">
+                            <video autoplay muted loop src="https://videos.pexels.com/video-files/29652160/12757221_1920_1080_30fps.mp4"></video>
+                        </div>
+                        <div class="carousel-item">
+                            <video autoplay muted loop src="https://videos.pexels.com/video-files/29653086/12757422_1920_1080_30fps.mp4"></video>
+                        </div>
+                        <div class="carousel-item">
+                            <video autoplay muted loop src="https://videos.pexels.com/video-files/29653315/12757499_1920_1080_30fps.mp4"></video>
+                        </div>
+                        <div class="carousel-item">
+                            <video autoplay muted loop src=""></video>
+                        </div>
+                        <div class="carousel-item">
+                            <video autoplay muted loop src=""></video>
+                        </div>
+                        <div class="carousel-item">
+                            <video autoplay muted loop src=""></video>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#videoCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#videoCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </button>
+                </div>
+            </div>
+        </section>
+        
+    </main> -->
+        
+        
+    <script src="s5.js">
+        
+    </script>
+
+</body>
+</html>
